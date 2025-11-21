@@ -1,5 +1,4 @@
 import p5 from "p5";
-
 const p = new p5((sketch) => {
     sketch.setup = setup;
 });
