@@ -69,8 +69,15 @@ function drawGame() {
     p.circle(circle.x, circle.y, circle.r * 2);
 
     p.text("✂️",circle.x,circle.y)
-
   }
+  p.fill("black");
+  p.noStroke();
+  p.textSize(15);
+  p.textAlign("left");
+  p.text(`🪨: ${rocks.length}`,10,height-60)
+  p.text(`📜: ${papers.length}`,10,height-40)
+  p.text(`✂️: ${scissors.length}`,10,height-20)
+
 }
 function updateCircles() {
   if (!paused) {
